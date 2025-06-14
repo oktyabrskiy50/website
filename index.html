@@ -6,43 +6,70 @@
   <title>ООО "ЭВЕРЕСТ"</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
       margin: 0;
       padding: 0;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
       color: #333;
     }
-    header, footer {
-      background: #2f4f4f;
+    header {
+      background: #0a3d62;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
     main {
-      padding: 30px;
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: -40px auto 60px;
       background: white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      overflow: hidden;
     }
-    h1 {
-      text-align: center;
-      margin-top: 0;
+    .hero img {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      height: 400px;
     }
-    .info-block {
-      margin-bottom: 20px;
+    .content {
+      padding: 30px 40px;
     }
-    .label {
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .info-item {
+      flex: 1 1 250px;
+      padding: 20px;
+      background: #f7f9fc;
+      border-radius: 8px;
+      transition: transform 0.2s;
+    }
+    .info-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    .info-item .label {
       font-weight: bold;
+      margin-bottom: 8px;
+      color: #0a3d62;
     }
-    .image-block {
-      margin: 30px 0;
+    footer {
       text-align: center;
+      padding: 20px;
+      background: #0a3d62;
+      color: white;
+      font-size: 0.9em;
     }
-    .image-block img {
-      max-width: 100%;
-      height: auto;
-      border: 1px solid #ccc;
+    @media (max-width: 600px) {
+      header h1 { font-size: 2em; }
+      .info { flex-direction: column; }
     }
   </style>
 </head>
@@ -52,24 +79,28 @@
   </header>
 
   <main>
-    <div class="image-block">
+    <div class="hero">
       <img src="screenshot.png" alt="Здание склада ООО ЭВЕРЕСТ" />
     </div>
 
-    <div class="info-block">
-      <div class="label">Телефон:</div>
-      <div>+7 495 669 18 98</div>
-    </div>
-    <div class="info-block">
-      <div class="label">Адрес:</div>
-      <div>140060, Московская область, Люберецкий район, пгт. Октябрьский,<br>ул. Старый двор, стр. 4</div>
-    </div>
-    <div class="info-block">
-      <div class="label">Часы работы:</div>
-      <div>
-        Понедельник—пятница: 9:00–18:00<br>
-        Обед: 13:00–14:00<br>
-        Суббота и воскресенье: выходной
+    <div class="content">
+      <div class="info">
+        <div class="info-item">
+          <div class="label">📞 Телефон:</div>
+          <div>+7 495 669 18 98</div>
+        </div>
+        <div class="info-item">
+          <div class="label">📍 Адрес:</div>
+          <div>140060, Московская область, Люберецкий район,<br>пгт Октябрьский, ул. Старый двор, стр. 4</div>
+        </div>
+        <div class="info-item">
+          <div class="label">⏰ Часы работы:</div>
+          <div>
+            Пн–Пт: 9:00–18:00<br>
+            Обед: 13:00–14:00<br>
+            Сб–Вс: выходной
+          </div>
+        </div>
       </div>
     </div>
   </main>
