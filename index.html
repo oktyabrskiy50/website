@@ -4,74 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>ООО "ЭВЕРЕСТ"</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
-      color: #333;
-    }
-    header {
-      background: #0a3d62;
-      color: white;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    main {
-      max-width: 900px;
-      margin: -40px auto 60px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-      overflow: hidden;
-    }
-    .hero img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-      height: 400px;
-    }
-    .content {
-      padding: 30px 40px;
-    }
-    .info {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .info-item {
-      flex: 1 1 250px;
-      padding: 20px;
-      background: #f7f9fc;
-      border-radius: 8px;
-      transition: transform 0.2s;
-    }
-    .info-item:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    .info-item .label {
-      font-weight: bold;
-      margin-bottom: 8px;
-      color: #0a3d62;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0a3d62;
-      color: white;
-      font-size: 0.9em;
-    }
-    @media (max-width: 600px) {
-      header h1 { font-size: 2em; }
-      .info { flex-direction: column; }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
@@ -104,6 +37,9 @@
       </div>
     </div>
   </main>
+
+  <!-- Кнопка "Позвонить" только для мобильных -->
+  <a class="call-button" href="tel:+74956691898">📞 Позвонить</a>
 
   <footer>
     &copy; 2025 ООО "ЭВЕРЕСТ"
