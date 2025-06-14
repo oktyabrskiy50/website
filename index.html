@@ -2,44 +2,73 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
   <title>ООО "ЭВЕРЕСТ"</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <h1>ООО "ЭВЕРЕСТ"</h1>
+    <div class="header-container">
+      <h1>ООО "ЭВЕРЕСТ"</h1>
+      <p class="mobile-phone"><i class="fas fa-phone"></i> +7 495 669 18 98</p>
+    </div>
   </header>
+
+  <nav class="mobile-menu">
+    <button class="menu-toggle" aria-label="Открыть меню">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul class="menu-items">
+      <li><a href="#contacts">Контакты</a></li>
+      <li><a href="#about">О нас</a></li>
+      <li><a href="#services">Услуги</a></li>
+    </ul>
+  </nav>
 
   <main>
     <div class="hero">
-      <img src="screenshot.png" alt="Здание склада ООО ЭВЕРЕСТ" />
+      <img src="screenshot.png" alt="Здание склада ООО ЭВЕРЕСТ" loading="lazy" />
     </div>
 
-    <div class="content">
+    <div class="content" id="contacts">
       <div class="info">
         <div class="info-item">
-          <div class="label">📞 Телефон:</div>
-          <div>+7 495 669 18 98</div>
+          <div class="label"><i class="fas fa-phone-alt"></i> Телефон:</div>
+          <div><a href="tel:+74956691898">+7 495 669 18 98</a></div>
         </div>
         <div class="info-item">
-          <div class="label">📍 Адрес:</div>
+          <div class="label"><i class="fas fa-map-marker-alt"></i> Адрес:</div>
           <div>140060, Московская область, Люберецкий район,<br>пгт Октябрьский, ул. Старый двор, стр. 4</div>
         </div>
         <div class="info-item">
-          <div class="label">⏰ Часы работы:</div>
+          <div class="label"><i class="fas fa-clock"></i> Часы работы:</div>
           <div>
-            Пн–Пт: 9:00–18:00<br>
-            Обед: 13:00–14:00<br>
-            Сб–Вс: выходной
+            <span class="work-hours">Пн–Пт: 9:00–18:00</span><br>
+            <span class="lunch">Обед: 13:00–14:00</span><br>
+            <span class="weekend">Сб–Вс: выходной</span>
           </div>
         </div>
+      </div>
+      
+      <div class="map-container">
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef&amp;source=constructor" 
+                width="100%" height="300" frameborder="0" loading="lazy"></iframe>
       </div>
     </div>
   </main>
 
   <footer>
-    &copy; 2025 ООО "ЭВЕРЕСТ"
+    <div class="footer-content">
+      <div class="copyright">&copy; 2025 ООО "ЭВЕРЕСТ"</div>
+      <div class="social-links">
+        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" aria-label="Телеграм"><i class="fab fa-telegram"></i></a>
+        <a href="#" aria-label="VKontakte"><i class="fab fa-vk"></i></a>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
