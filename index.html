@@ -3,137 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="ООО ЭВЕРЕСТ - складские услуги в Московской области">
-  <title>ООО "ЭВЕРЕСТ" - Складские услуги</title>
+  <title>ООО "ЭВЕРЕСТ"</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
   <header>
-    <div class="header-content">
-      <h1>ООО "ЭВЕРЕСТ"</h1>
-      <p class="tagline">Надёжные складские решения с 2010 года</p>
-    </div>
-    <div class="header-overlay"></div>
+    <h1>ООО "ЭВЕРЕСТ"</h1>
   </header>
 
-  <nav class="mobile-nav">
-    <button class="menu-toggle" aria-label="Меню">
-      <i class="fas fa-bars"></i>
-    </button>
-    <ul class="mobile-menu">
-      <li><a href="#contacts">Контакты</a></li>
-      <li><a href="#about">О компании</a></li>
-      <li><a href="#services">Услуги</a></li>
-    </ul>
-  </nav>
-
   <main>
-    <section class="hero">
-      <div class="hero-image">
-        <img src="screenshot.png" alt="Здание склада ООО ЭВЕРЕСТ" loading="lazy" />
-        <div class="hero-overlay">
-          <h2>Профессиональные складские услуги</h2>
-          <p>Безопасное хранение и логистика ваших товаров</p>
+    <div class="hero">
+      <img src="screenshot.png" alt="Здание склада ООО ЭВЕРЕСТ" />
+    </div>
+
+    <div class="content">
+      <div class="info">
+        <div class="info-item">
+          <div class="label">📞 Телефон:</div>
+          <div>+7 495 669 18 98</div>
         </div>
-      </div>
-    </section>
-
-    <section class="content" id="contacts">
-      <div class="container">
-        <h2 class="section-title">Наши контакты</h2>
-        <div class="info-grid">
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-phone-alt"></i>
-            </div>
-            <div class="info-content">
-              <h3>Телефон</h3>
-              <p><a href="tel:+74956691898">+7 495 669 18 98</a></p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-map-marker-alt"></i>
-            </div>
-            <div class="info-content">
-              <h3>Адрес</h3>
-              <p>140060, Московская область, Люберецкий район,<br>пгт Октябрьский, ул. Старый двор, стр. 4</p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-clock"></i>
-            </div>
-            <div class="info-content">
-              <h3>Часы работы</h3>
-              <p>
-                <span class="work-days">Пн–Пт: 9:00–18:00</span><br>
-                <span class="lunch">Обед: 13:00–14:00</span><br>
-                <span class="weekend">Сб–Вс: выходной</span>
-              </p>
-            </div>
-          </div>
-
-          <div class="info-card">
-            <div class="info-icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="info-content">
-              <h3>Электронная почта</h3>
-              <p><a href="mailto:info@sklad-everest.ru">info@sklad-everest.ru</a></p>
-            </div>
-          </div>
+        <div class="info-item">
+          <div class="label">📍 Адрес:</div>
+          <div>140060, Московская область, Люберецкий район,<br>пгт Октябрьский, ул. Старый двор, стр. 4</div>
         </div>
-
-        <div class="map-container">
-          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1234567890abcdef&amp;source=constructor" 
-                  width="100%" height="400" frameborder="0" loading="lazy"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <section class="about-section" id="about">
-      <div class="container">
-        <h2 class="section-title">О нашей компании</h2>
-        <div class="about-content">
-          <div class="about-text">
-            <p>ООО "ЭВЕРЕСТ" - это современный складской комплекс, предоставляющий полный спектр услуг по хранению и обработке грузов.</p>
-            <p>Наша миссия - обеспечить клиентам безопасное и удобное хранение товаров с индивидуальным подходом к каждому проекту.</p>
-            <ul class="features-list">
-              <li><i class="fas fa-check-circle"></i> Охраняемая территория</li>
-              <li><i class="fas fa-check-circle"></i> Современная система безопасности</li>
-              <li><i class="fas fa-check-circle"></i> Климат-контроль</li>
-              <li><i class="fas fa-check-circle"></i> Грузоподъёмное оборудование</li>
-            </ul>
-          </div>
-          <div class="about-image">
-            <img src="warehouse-interior.jpg" alt="Внутри склада" loading="lazy">
+        <div class="info-item">
+          <div class="label">⏰ Часы работы:</div>
+          <div>
+            Пн–Пт: 9:00–18:00<br>
+            Обед: 13:00–14:00<br>
+            Сб–Вс: выходной
           </div>
         </div>
       </div>
-    </section>
+    </div>
   </main>
 
   <footer>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <h3>ООО "ЭВЕРЕСТ"</h3>
-        <p>Надёжность и качество с 2010 года</p>
-      </div>
-      <div class="footer-links">
-        <a href="#"><i class="fab fa-vk"></i></a>
-        <a href="#"><i class="fab fa-telegram"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2010-2025 ООО "ЭВЕРЕСТ". Все права защищены.</p>
-    </div>
+    &copy; 2025 ООО "ЭВЕРЕСТ"
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
